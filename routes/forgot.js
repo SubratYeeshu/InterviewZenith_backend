@@ -6,8 +6,11 @@ const nodemailer = require("nodemailer");
 const UserModel = require("../Db/user");
 require('dotenv').config();
 
-const sendMail = process.env.MAIL_USER;
-const sendPassword = process.env.MAIL_PASSWORD;
+// const sendMail = process.env.MAIL_USER;
+// const sendPassword = process.env.MAIL_PASSWORD;
+
+const sendMail = "shubrat.parth@gmail.com";
+const sendPassword = "qvqjufvghdqefozh";
 
 const generateOtp = () => {
   return Math.floor(Math.random() * (9999 - 1000)) + 1000 + "";
