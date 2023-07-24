@@ -41,10 +41,10 @@ router.post("/otp", async (req, res) => {
     const mailOptions = {
       from: sendMail,
       to: userEmail,
-      subject: "Don't Share",
+      subject: "InterviewZenith - OTP to reset password",
       html: `
           <div  style="text-align: center;">
-            <h1> Keep My Recipe </h1>
+            <h1> InterviewZenith </h1>
             <br/> 
             <p> Hi, Let's reset your password. </p>
             <p> To reset the password, use the given OTP <p>
